@@ -30,7 +30,6 @@ export default {
         this.object=response.data
         console.log(response.data)
         
-        
 })
   },
   props: {
