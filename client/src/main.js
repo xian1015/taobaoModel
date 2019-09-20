@@ -11,6 +11,7 @@ import goods from './components/goods'
 import newworld from './components/newworld'
 import leftBar from './components/leftBar'
 import rightBar from './components/rightBar'
+import lzh from './components/lzh'
 
 
 Vue.use(VueRouter)
@@ -22,7 +23,8 @@ const routes = [
   {path:'/goods',component:goods},
   {path:'/newworld',component:newworld},
   {path:'/leftBar',component:leftBar},
-  {path:'/rightBar',component:rightBar}
+  {path:'/rightBar',component:rightBar},
+  {path:'/lzh',component:lzh}
 
 ]
 const router = new VueRouter({
