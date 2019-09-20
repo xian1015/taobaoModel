@@ -2,11 +2,13 @@
 <div class="bigbox">
   
   <div class="smallbox" v-for="(item,index) in object " :key="index" @click="fun">
-    <img class="imge" :src="item.url">
-  <div class="price">
-¥{{item.price}}
-</div>
-     <div class="text">{{item.text}}</div>
+    <a href="/goods">
+      <img class="imge" :src="item.url">
+      <div class="price">
+      ¥{{item.price}}
+      </div>
+      <div class="text">{{item.text}}</div>
+    </a>
   </div>
   
  
@@ -54,7 +56,6 @@ export default {
   width: 800px;
   height: 700px;
   margin: 40px auto;
-  background: gray;
   display: flex;
   justify-content: space-around;
   align-content: space-around;

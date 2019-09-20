@@ -7,7 +7,7 @@
 export default {
   name: 'app',
   mounted () {
-    this.$router.push('./goods')
+    this.$router.push('./lzh')
   }
 }
 </script>

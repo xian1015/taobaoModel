@@ -1,0 +1,50 @@
+#leftBar {
+    width: 420px;
+    height: 420px;
+    margin: 20px 20px 0px 20px;
+  }
+  #img {
+    width: 100%;
+  }
+  #item,
+  #describe {
+    width: 100%;
+    height: 82px;
+    background-color: white;
+  }
+  #describe {
+    width: 380px;
+    height: 18px;
+    background-color: white;
+    padding: 27px 40px 25px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #item #itemUl {
+    list-style: none;
+    float: left;
+  }
+  #item #itemLi {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 2px 0 0 16px;
+    background-color: black;
+  }
+  #shoucang,
+  #jubao {
+    font-size: 12px;
+    color: grey;
+  }
+  #itemImg {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    display: none;
+    top: 81px;
+    left: 29px;
+    background-color: aquamarine;
+  }
+  #item #itemLi:hover #itemImg {
+    display: block;
+  }
