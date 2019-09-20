@@ -26,7 +26,6 @@ const routes = [
   {path:'/rightBar',component:rightBar},
 
   {path:'/lzh',component:lzh}
-
 ]
 const router = new VueRouter({
     routes
