@@ -5,7 +5,7 @@
     </div>
     <div id="item">
       <ul id="itemUl">
-        <a href @mouseover="mouseOver">
+        <a href>
           <li id="itemLi">
             <img id="img" :src="pic1" />
             <div id="itemImg">
@@ -70,10 +70,7 @@ export default {
     };
   },
   methods: {
-    mouseOver() {
-      this.active = "background-color:black";
-      // 操作dom 获取p标签改变其样式
-    }
+   
   },
   components: {}
 };

@@ -1,14 +1,14 @@
 <template>
 <div class="bigbox">
-  
   <div class="smallbox" v-for="(item,index) in object " :key="index" @click="fun">
-    <a href="/goods">
+   
+    <router-link :to="{path:'/goods'}">
       <img class="imge" :src="item.url">
       <div class="price">
       ¥{{item.price}}
       </div>
       <div class="text">{{item.text}}</div>
-    </a>
+    </router-link>
   </div>
   
  
@@ -62,17 +62,30 @@ export default {
   flex-wrap: wrap
 }
 .smallbox{
-  width: 180px;
+  width: 200px;
   height: 324px;
  
 }
 .imge{
-  width: 180px;
+  width: 100%;
   height: 220px;
 }
 .price{
-  font-size: 24px;
+  margin: 0 auto;
+  width: 170px;
+  font-size: 22px;
   color:red;
+}
+a{
+  text-decoration: none;
+
+}
+.text{
+  width: 170px;
+  margin: 0 auto;
+  color: black;
+  font-size: 13px;
+  
 }
 
 </style>

@@ -22,10 +22,10 @@
   }
   #item #itemUl {
     list-style: none;
-    float: left;
+    margin-left: 22px;
   }
   #item #itemLi {
-    float: left;
+    display: inline-block;
     width: 60px;
     height: 60px;
     margin: 2px 0 0 16px;
@@ -41,8 +41,8 @@
     height: 420px;
     position: absolute;
     display: none;
-    top: 81px;
-    left: 29px;
+    top: 80px;
+    left:200px;
     background-color: aquamarine;
   }
   #item #itemLi:hover #itemImg {

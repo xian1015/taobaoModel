@@ -23,7 +23,7 @@ app.all("*", function(req, res, next) {
   next();
 });
 //设置固定值
-let ip = "http://192.168.3.122:";
+let ip = "localhost:";
 let port = 8888;
 
 let indexController = require("./controllers/IndexController");
