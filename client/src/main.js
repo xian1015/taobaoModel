@@ -7,8 +7,11 @@ import VueAxios from 'vue-axios'
 
 import App from './App.vue'
 
-import HelloWorld from './components/HelloWorld'
+import goods from './components/goods'
 import newworld from './components/newworld'
+import leftBar from './components/leftBar'
+import rightBar from './components/rightBar'
+
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
@@ -16,8 +19,11 @@ Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 
 const routes = [
-  {path:'/HelloWorld',component:HelloWorld},
-  {path:'/newworld',component:newworld}
+  {path:'/goods',component:goods},
+  {path:'/newworld',component:newworld},
+  {path:'/leftBar',component:leftBar},
+  {path:'/rightBar',component:rightBar}
+
 ]
 const router = new VueRouter({
     routes

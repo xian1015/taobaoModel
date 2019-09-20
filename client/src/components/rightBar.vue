@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+
   </div>
 </template>
 <script>
 export default {
   name: 'app',
-  mounted () {
-    this.$router.push('./goods')
+  components:{
+   
   }
 }
 </script>
@@ -22,12 +22,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   color: red
-}
-.box{
-  width: 100px;
-  height: 200px;
-  background-color: red;
-  color: blue
 }
 
 </style>
