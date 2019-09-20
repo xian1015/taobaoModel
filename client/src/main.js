@@ -24,7 +24,7 @@ const routes = [
   {path:'/newworld',component:newworld},
   {path:'/leftBar',component:leftBar},
   {path:'/rightBar',component:rightBar},
-  
+
   {path:'/lzh',component:lzh}
 
 ]

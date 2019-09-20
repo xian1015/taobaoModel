@@ -29,7 +29,7 @@ export default {
     Vue.axios.get(`http://localhost:8888/index`).then((response) => {
         this.object=response.data
         console.log(response.data)
-        
+      
 })
   },
   props: {
