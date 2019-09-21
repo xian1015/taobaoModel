@@ -31,19 +31,15 @@ Vue.use(VueAxios, axios)
 export default {
   
   data:function(){
-      return {object:[],
+      return {
+        object:[],
         pic1: require("../assets/img/left01.jpg"),}
   },
-  name: 'xinlang',
   mounted(){
     Vue.axios.get(`http://localhost:8888/goods`).then((response) => {
         this.object=response.data
         console.log(response.data)
-    
 })
-  },
-  props: {
-    
   },
   
   methods:{

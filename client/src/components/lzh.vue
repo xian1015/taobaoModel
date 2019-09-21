@@ -1,5 +1,5 @@
 <template>
-<div class="bigbox">
+<div class="bigbox" v-title data-title="Zara官方旗舰店-淘宝搜索">
   <div class="smallbox" v-for="(item,index) in object " :key="index" @click="fun">
    
     <router-link :to="{path:'/goods'}">

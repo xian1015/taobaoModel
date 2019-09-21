@@ -266,17 +266,9 @@ li {
 .r_proListing_title{
     text-align: left;
     float: left;
-    width: 66px;
     color: #999;
 }
-.r_proListing_infor{
-    display: inline-block;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding: 0 2px 0 0;
-    margin: 0 10px 0 0;
-    color: #666;
-}
+
 .r_promise_warning{
     margin: 0 10px;
     color: #999;

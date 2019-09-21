@@ -35,3 +35,9 @@ new Vue({
   router,
   render: h => h(App),
 }).$mount('#app')
+
+Vue.directive('title', {
+  inserted: function (el, binding) {
+    document.title = el.dataset.title
+  }
+})

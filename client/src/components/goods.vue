@@ -1,5 +1,5 @@
 <template>
-  <div id="box">
+  <div id="box" v-title data-title="Zara碎花裙-商品详情">
    <div id="leftBarBox">
     <leftBar></leftBar>
    </div>
