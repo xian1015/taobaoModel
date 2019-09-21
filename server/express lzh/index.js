@@ -29,6 +29,8 @@ let port = 8888;
 let indexController = require("./controllers/IndexController");
 app.get("/index", indexController.index);
 
+let goodsController = require("./controllers/GoodsController");
+app.get("/goods", goodsController.goods);
 
 //4,进行监听
 app.listen(port, function() {

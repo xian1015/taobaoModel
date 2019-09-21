@@ -82,6 +82,9 @@ li {
 .r_areaBox{
     padding: 9px 0;
 }
+.r_action a{
+  color: black;
+}
 
 /**
 * 评价积分

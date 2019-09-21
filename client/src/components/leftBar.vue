@@ -5,49 +5,13 @@
     </div>
     <div id="item">
       <ul id="itemUl">
-        <a href>
+        <a href  v-for="(item,index) in object " :key="index" @click="fun">
           <li id="itemLi">
-            <img id="img" :src="pic1" />
+            <img id="img"  :src="item.url" />
             <div id="itemImg">
-              <img id="img" :src="pic1" />
+              <img id="img" :src="item.url"  />
             </div>
           </li>
-        </a>
-
-        <a href>
-          <li id="itemLi">
-            <img id="img" :src="pic2" />
-            <div id="itemImg">
-              <img id="img" :src="pic2" />
-            </div>
-          </li>
-        </a>
-        <a href>
-          <li id="itemLi">
-            <img id="img" :src="pic3" />
-            <div id="itemImg">
-              <img id="img" :src="pic3" />
-            </div>
-          </li>
-          
-        </a>
-        <a href>
-          <li id="itemLi">
-            <img id="img" :src="pic4" />
-            <div id="itemImg">
-              <img id="img" :src="pic4" />
-            </div>
-          </li>
-          
-        </a>
-        <a href>
-          <li id="itemLi">
-            <img id="img" :src="pic5" />
-            <div id="itemImg">
-              <img id="img" :src="pic5" />
-            </div>
-          </li>
-          
         </a>
       </ul>
     </div>
@@ -58,22 +22,37 @@
   </div>
 </template>
 <script>
+
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
+
 export default {
-  name: "leftBar",
-  data() {
-    return {
-      pic1: require("../assets/img/left01.jpg"),
-      pic2: require("../assets/img/left02.jpg"),
-      pic3: require("../assets/img/left03.jpg"),
-      pic4: require("../assets/img/left04.jpg"),
-      pic5: require("../assets/img/left05.jpg")
-    };
+  
+  data:function(){
+      return {object:[],
+        pic1: require("../assets/img/left01.jpg"),}
   },
-  methods: {
-   
+  name: 'xinlang',
+  mounted(){
+    Vue.axios.get(`http://localhost:8888/goods`).then((response) => {
+        this.object=response.data
+        console.log(response.data)
+    
+})
   },
-  components: {}
-};
+  props: {
+    
+  },
+  
+  methods:{
+    fun:function(){
+      this.$router.push()
+    }
+    
+  }
+}
 </script>
 
 <style scoped>
